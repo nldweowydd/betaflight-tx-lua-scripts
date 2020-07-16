@@ -10,6 +10,16 @@ local supportedRadios =
         yMinLimit       = 12,
         yMaxLimit       = 52,
     },
+    ["128x96"]  = 
+    {
+        templateHome    = "TEMPLATES/128x96/",
+        MenuBox         = { x=15, y=12, w=100, x_offset=36, h_line=12, h_offset=3 },
+        SaveBox         = { x=15, y=12, w=100, x_offset=4,  h=30, h_offset=5 },
+        NoTelem         = { 30, 87, "No Telemetry", BLINK },
+        textSize        = SMLSIZE,
+        yMinLimit       = 12,
+        yMaxLimit       = 84,
+    },
     ["212x64"]  = 
     {
         templateHome    = "TEMPLATES/212x64/",

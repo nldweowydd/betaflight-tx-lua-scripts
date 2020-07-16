@@ -11,7 +11,8 @@ end
 
 local function init()
     if apiVersion == 0 then
-        lcd.drawText(6, radio.yMinLimit, "Initialising")
+        lcd.drawText(6, radio.yMinLimit, "Initialising...")
+        lcd.drawText(6, radio.yMinLimit + 8, "Pls connect RX & FC...")
         data_init = data_init or assert(loadScript("data_init.lua"))()
         data_init()
     elseif apiVersion > 0 and not apiVersionReceived then
